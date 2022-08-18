@@ -1,12 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Hospital Website</title>
-    <!-- -------------styles------------ -->
-    <link rel="stylesheet" href="./css/styles.min.css" />
-  </head>
-  <body></body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Responsive Hospital Website</title>
+        <!-- -------------STYLES------------ -->
+        <link rel="stylesheet" href="./css/styles.min.css" />
+        <!-- -------------BOXICONS------------ -->
+        <link
+            href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <nav>
+            <div class="container">
+                <a href="h3" class="nav__logo"><h3>DONIK</h3></a>
+
+                <ul id="nav__items">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#specialists">Specialists</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li>
+                        <a href="#appointment" class="btn">Make Appointment</a>
+                    </li>
+                </ul>
+
+                <button id="open__nav-btn"><i class="bx bx-menu"></i></button>
+                <button id="close__nav-btn"><i class="bx bx-x"></i></button>
+            </div>
+        </nav>
+        <!-- ==============================END OF NAV========================= -->
+
+        <!-- ==============================JavaScript========================= -->
+        <script src="./main.js"></script>
+    </body>
 </html>
