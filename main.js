@@ -1,14 +1,9 @@
 const navItems = document.querySelector("#nav__items");
-const openNavBtn = document.querySelector("#open__nav-btn");
-const closeNavBtn = document.querySelector("#close__nav-btn");
+const openNavBtn = document.querySelector("#open__nav-btn i");
 
 openNavBtn.addEventListener("click", () => {
-    navItems.style.display = "flex";
-    openNavBtn.style.display = "none";
-    closeNavBtn.style.display = "inline-block";
-});
-closeNavBtn.addEventListener("click", () => {
-    navItems.style.display = "none";
-    openNavBtn.style.display = "inline-block";
-    closeNavBtn.style.display = "none";
+    navItems.classList.toggle("show-menu");
+
+    // This is toggle of Icon. Menu Icon changes to Close Icon
+    openNavBtn.classList.toggle("fa-times");
 });
