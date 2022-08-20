@@ -44,6 +44,17 @@ section {
     @include button($white-color, $primary-color);
 }
 
+//================- NAVLIST ANIMATION==================
+@keyframes flipNavItem {
+    0% {
+        transform: rotateX(90deg);
+    }
+    100% {
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+}
+
 // =======================MEDIA QUERIES (MEDIUM DEVICES) ==============================
 
 @media screen and (max-width: 1024px) {
