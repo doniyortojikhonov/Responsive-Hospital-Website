@@ -1,4 +1,26 @@
 nav {
+    // navbar styles on scroll using JS
+
+    &.window-scroll {
+        background: $white-color;
+
+        .container {
+            button {
+                color: $black-color;
+            }
+            a {
+                color: $black-color;
+
+                & > h3 {
+                    color: $black-color;
+                }
+
+                &.btn {
+                    color: $white-color;
+                }
+            }
+        }
+    }
     width: 100vw;
     height: 5rem;
     position: fixed;
